@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Portfolio</title>
+
+	<link rel='stylesheet' href='/global.css'>
+</head>
+
+<body>
+	<div class="block block-1">
+		<img class="img" width="100%" src="/assets/1.png" />
+	</div>
+	<div class="block block-2">
+		<img class="img" width="100%" src="/assets/2.png" />
+	</div>
+	<div class="block block-3">
+		<img class="img" width="100%" src="/assets/3.png" />
+	</div>
+	<div class="block block-4">
+		<img class="img" width="100%" src="/assets/4.png" />
+	</div>
+	<div class="block block-5">
+		<video class="video" width="100%" autoplay loop muted>
+			<source src="/assets/5.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="block block-6">
+		<video class="video" width="100%" autoplay loop muted>
+			<source src="/assets/6.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="block block-7">
+		<video class="video" width="100%" autoplay loop muted>
+			<source src="/assets/7.mp4" type="video/mp4">
+		</video>
+	</div>
+	<script>
+		const videos = document.querySelectorAll('video');
+		videos.forEach((video) => {
+			video.play()
+		})
+	</script>
+</body>
+</html>
